@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://eduardojsbarroso.github.io/sitemap.xml
+Sitemap: https://nathanamouroux.github.io/sitemap.xml

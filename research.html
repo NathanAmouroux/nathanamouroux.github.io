@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Research — Eduardo José Barroso</title>
-<meta name="description" content="Research interests of Eduardo José Barroso, cosmologist at LAPP, Annecy, France.">
-<link rel="canonical" href="https://eduardojsbarroso.github.io/research.html">
+<title>Research — Nathan Amouroux</title>
+<meta name="description" content="Research by Nathan Amouroux on astronomical instrumentation, Rubin Observatory calibration, survey systematics, galaxy clusters, and time-domain astrophysics.">
+<link rel="canonical" href="https://nathanamouroux.github.io/research.html">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌌</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +16,7 @@
 
 <div class="topnav">
   <div class="wrap">
-    <a class="brand" href="index.html">Eduardo José Barroso</a>
+    <a class="brand" href="index.html">Nathan Amouroux</a>
     <nav>
       <a href="about.html">About</a>
       <a href="research.html" class="active">Research</a>
@@ -30,107 +30,97 @@
 
 <main class="page wrap">
   <h1>Research</h1>
-  <p class="page-sub">Cosmologist · LAPP, Annecy, France</p>
+  <p class="page-sub">Astronomical instrumentation · Observational cosmology · Data analysis</p>
 
   <section>
     <p>
-      My research sits between observational and theoretical cosmology,
-      currently centered on galaxy clusters as cosmological probes within the
-      LSST Dark Energy Science Collaboration (DESC), alongside ongoing work on
-      primordial black hole formation in bouncing cosmologies and numerical
-      methods for cosmological inference.
+      My research focuses on the connection between astronomical instrumentation,
+      data processing, and scientific analysis. Modern surveys such as LSST produce enormous
+      volumes of data, but extracting reliable scientific results requires a
+      detailed understanding of instrumental response, observational biases,
+      and the performance of analysis methods. During my PhD, I worked on these
+      challenges in the context of the Vera C. Rubin Observatory and its Legacy
+      Survey of Space and Time (LSST), from telescope calibration to the
+      preparation of galaxy-cluster samples for cosmology.
     </p>
 
-    <h2>Galaxy clusters with LSST-DESC</h2>
+    <h2>Photometric calibration with the Collimated Beam Projector</h2>
     <p>
-      I coordinate the galaxy cluster cosmology pipeline for LSST-DESC, which
-      turns LSST galaxy-cluster data into cosmological constraints — from
-      data-vector construction all the way to the final likelihood inference.
-      I've contributed to every stage: building cluster data-vector estimators
-      in <code>TXPipe</code>, co-developing <code>Crow</code> for weak-lensing
-      profile predictions, extending the <code>TJPCov</code> covariance
-      framework, and constructing likelihoods with <code>Firecrown</code>, all
-      now tied together in <code>CLPipe</code>, an automated end-to-end
-      analysis framework. I've also contributed to validating the
-      <code>WaZP</code> cluster finder on DC2 simulations and to the second
-      public release of <code>CLMM</code>.
+      Precision cosmology relies on accurate measurements of astronomical
+      brightness. For example, Type Ia supernovae are used to trace the
+      expansion history of the Universe, so small errors in photometric
+      calibration can propagate into cosmological constraints. As part of the
+      Rubin Observatory calibration effort, I worked with the Collimated Beam
+      Projector (CBP), an in-dome instrument that sends artificial point sources
+      of known wavelength and flux through the telescope.
+    </p>
+    <p>
+      I developed an end-to-end data-reduction pipeline for CBP observations,
+      integrated into the Rubin Data Management framework. The pipeline handles
+      detector-level corrections, spot detection, background subtraction, and
+      aperture photometry across the LSSTCam focal plane. I used these data to
+      characterize detector response as a function of wavelength and to measure
+      the transmission profiles of five of the six LSST broadband filters
+      in the assembled telescope. Repeated observations also allowed me to
+      assess measurement repeatability and identify sources of systematic
+      uncertainty. This work helps establish the instrumental response needed
+      for reliable photometric measurements with LSST.
     </p>
 
-    <figure class="pipeline-figure">
-      <img src="assets/cluster-pipeline-diagram.png" alt="Diagram of the LSST-DESC cluster cosmology pipeline: galaxy and cluster catalogs flow into TXPipe for data measurements, then through CLMM, CROW, CCL and TJPCov, into Firecrown for likelihood construction.">
-      <figcaption>The LSST-DESC cluster cosmology pipeline I coordinate.</figcaption>
-    </figure>
-
-    <div class="figure-row">
-      <img class="figure-row-img" src="assets/mass-richness-payerne2025.webp" alt="Scatter plot of redMaPPer richness versus cosmoDC2 halo mass, colored by redshift, with a best-fit mass–richness relation at z=0.4.">
-      <div class="figure-row-text">
-        <p>
-          Cluster richness — the number of galaxies detected in a cluster —
-          is an easy quantity to observe, but it only becomes useful for
-          cosmology once it's calibrated against true cluster mass. This
-          plot shows redMaPPer richness against the true halo mass in the
-          DESC cosmoDC2 simulations, color-coded by redshift, together with
-          the best-fit mass–richness relation at z=0.4. I contributed to
-          this analysis (Payerne et al. 2025), which directly informed the
-          design of the DESC cluster pipeline.
-        </p>
-      </div>
-    </div>
-
+    <h2>Survey systematics and bright-star masking</h2>
     <p>
-      Beyond the technical development, I coordinate this effort within
-      DESC — running weekly meetings and prioritizing the team's work — and
-      I organized a hands-on cluster-pipeline workshop at LAPP Annecy with
-      15 participants from inside and outside France. I've been an active
-      DESC member since my PhD and a full member since 2023, working across
-      the Cluster, Forecast, Weak Lensing, 3×2pt, and Blinding working
-      groups.
+      The quality of a cosmological analysis also depends on recognizing where
+      the sky cannot be measured reliably. Bright foreground stars can obscure
+      nearby galaxies, bias their measured fluxes, and generate spurious
+      detections. These effects are particularly important when building
+      galaxy samples for large-scale structure and galaxy-cluster studies.
+    </p>
+    <p>
+      I developed automated software to generate masks around bright stars in
+      both LSST simulations and real survey data. The method is designed to
+      identify regions affected by these objects so that they can be treated
+      consistently in subsequent analyses. It has been used within the Rubin
+      LSST Dark Energy Science Collaboration (DESC), including in work on early
+      LSST Data Preview 1 observations. This project connects practical image
+      analysis with the broader goal of controlling observational systematics
+      in cosmological measurements.
     </p>
 
-    <h2>Primordial black holes in bouncing cosmologies</h2>
+    <h2>Galaxy-cluster detection and validation</h2>
     <p>
-      I also study whether primordial black holes (PBHs) can form in bouncing
-      cosmologies — alternative early-Universe models where a contracting
-      phase precedes the Big Bang, avoiding the initial singularity. Because
-      perturbations evolve continuously through the bounce rather than
-      freezing outside the horizon as in inflation, the usual collapse
-      threshold used to predict PBH formation doesn't directly apply. We
-      developed a framework using exact inhomogeneous solutions to track this
-      evolving threshold, first in a dust-dominated bounce (Barroso et al.
-      2025), and now in a more realistic dust-plus-radiation bounce (Ye,
-      Demetrio, Barroso et al. 2026). Both studies find that PBHs formed
-      during the contraction phase never reach cosmologically relevant
-      abundances — a useful constraint on non-inflationary early-Universe
-      scenarios.
+      Galaxy clusters are among the most massive structures in the Universe.
+      Their abundance and evolution provide a way to test cosmological models,
+      provided that the cluster samples are well understood. In practice, a
+      cluster-finding algorithm does not detect every real cluster, and its
+      catalogue can contain false detections. Quantifying these effects is
+      essential before using cluster counts for cosmology.
     </p>
-
-    <h2>Numerical methods for cosmology</h2>
     <p>
-      I contribute to the Numerical Cosmology Library (<code>NumCosmo</code>),
-      developing computational tools that other cosmological analyses rely
-      on: <strong>APES</strong>, an ensemble MCMC sampler that uses kernel
-      density estimation to build efficient proposal distributions (Vitenti
-      &amp; Barroso 2023), and <strong>AutoKnots</strong>, a spline
-      interpolation method that automatically places knots to cut
-      computational cost without losing precision (Vitenti, de Simoni,
-      Penna-Lima &amp; Barroso 2025).
+      I contributed to the validation and optimization of the AMICO cluster
+      finder using LSST DESC simulations, studying its completeness and purity
+      as functions of redshift and halo mass. I also worked on estimating
+      cluster-selection functions and on the validation of cluster-finding
+      methods in the presence of observational effects, including bright-star
+      contamination. Together, these efforts help establish the reliability
+      and limitations of cluster catalogues intended for future cosmological
+      analyses.
     </p>
 
     <ul class="keywords">
+      <li>Rubin Observatory / LSST</li>
+      <li>Photometric calibration</li>
+      <li>Collimated Beam Projector</li>
+      <li>Survey systematics</li>
+      <li>Bright-star masking</li>
       <li>Galaxy clusters</li>
-      <li>Weak lensing</li>
-      <li>LSST / Rubin Observatory</li>
       <li>LSST-DESC</li>
-      <li>Primordial black holes</li>
-      <li>Bouncing cosmology</li>
-      <li>Numerical cosmology</li>
-      <li>MCMC methods</li>
+      <li>Data-processing pipelines</li>
     </ul>
   </section>
 </main>
 
 <footer class="site-footer">
-  <div class="wrap"><p>&copy; <span class="year"></span> Eduardo José Barroso</p></div>
+  <div class="wrap"><p>&copy; <span class="year"></span> Nathan Amouroux</p></div>
 </footer>
 
 <script>

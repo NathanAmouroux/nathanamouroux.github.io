@@ -1,6 +1,6 @@
-# eduardojsbarroso.github.io
+# nathanamouroux.github.io
 
-Personal academic homepage for Eduardo José Barroso (cosmologist, LAPP, Annecy, France).
+Personal academic homepage for Nathan Amouroux (cosmologist, LAPP, Annecy, France).
 Plain HTML/CSS, no build step, hosted on GitHub Pages.
 
 ## Structure
@@ -20,8 +20,8 @@ jump between sections from anywhere, not just the home page.
 
 ## Publish it
 
-1. Repo is already at `eduardojsbarroso/eduardojsbarroso.github.io`, so the
-   URL is `https://eduardojsbarroso.github.io/`.
+1. Repo is already at `nathanamouroux/nathanamouroux.github.io`, so the
+   URL is `https://nathanamouroux.github.io/`.
 2. GitHub → Settings → Pages → Source: deploy from branch `main`, folder
    `/ (root)`.
 3. Wait a minute, then visit the URL GitHub shows you.
