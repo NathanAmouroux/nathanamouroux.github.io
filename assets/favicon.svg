@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40">
+  <title>Nathan Amouroux</title>
+  <rect width="40" height="40" rx="10" fill="#1D4FB8"/>
+  <path d="M12 27V11l16 16V11" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="square" stroke-linejoin="miter"/>
+  <rect x="9"     y="31.6" width="3.67" height="2.6" fill="#5B3FD6"/>
+  <rect x="12.67" y="31.6" width="3.67" height="2.6" fill="#0FA39A"/>
+  <rect x="16.34" y="31.6" width="3.67" height="2.6" fill="#F08A1C"/>
+  <rect x="20.01" y="31.6" width="3.67" height="2.6" fill="#DE4B2C"/>
+  <rect x="23.68" y="31.6" width="3.67" height="2.6" fill="#AE2A4C"/>
+  <rect x="27.35" y="31.6" width="3.67" height="2.6" fill="#6A2A5E"/>
+</svg>

@@ -1,64 +1,46 @@
 # nathanamouroux.github.io
 
-Personal academic homepage for Nathan Amouroux (cosmologist, LAPP, Annecy, France).
-Plain HTML/CSS, no build step, hosted on GitHub Pages.
+Personal academic site of Nathan Amouroux (cosmologist, Rubin Observatory / LSST DESC).
+Plain HTML and CSS, no build step, hosted on GitHub Pages. Available in English (root) and French (`/fr/`).
 
 ## Structure
 
-A landing page (`index.html`) with your photo and six clickable cards, each
-linking to its own page:
+| English | Français | Content |
+| --- | --- | --- |
+| `index.html` | `fr/index.html` | Home: hero, passband figure, research summary, Pénélope, selected publications |
+| `about.html` | `fr/a-propos.html` | Background and interests |
+| `research.html` | `fr/recherche.html` | CBP calibration, bright-star masking, galaxy clusters (with figures) |
+| `publications.html` | `fr/publications.html` | Articles, proceedings, technical notes |
+| `outreach.html` | `fr/vulgarisation.html` | *L’Odyssée Cosmique de Pénélope*, public events, workshop |
+| `cv.html` | `fr/cv.html` | CV on the page, plus PDF downloads |
+| `contact.html` | `fr/contact.html` | Email, address, profiles (INSPIRE, ORCID, Scholar, GitHub) |
 
-- `about.html` — background / who you are
-- `research.html` — research interests
-- `publications.html` — papers and preprints
-- `cv.html` — CV download, plus PhD and Master's thesis downloads
-- `profiles.html` — INSPIRE-HEP, ORCID, Google Scholar, GitHub, Lattes
-- `contact.html` — email and address
+`profiles.html` only redirects to the contact page. Shared files live in `assets/`:
+`style.css`, `favicon.svg` (logo), `photo.jpg`, the two research figures, and the CV PDFs
+(`CV.pdf` in English, `CV-fr.pdf` in French).
 
-Every page shares `assets/style.css` and a consistent top nav bar so you can
-jump between sections from anywhere, not just the home page.
+Every page exists in both languages: when you change one, change its counterpart.
+The EN/FR switch in the header and the `hreflang` tags in `<head>` point to each other.
 
-## Publish it
+## Things you will want to edit
 
-1. Repo is already at `nathanamouroux/nathanamouroux.github.io`, so the
-   URL is `https://nathanamouroux.github.io/`.
-2. GitHub → Settings → Pages → Source: deploy from branch `main`, folder
-   `/ (root)`.
-3. Wait a minute, then visit the URL GitHub shows you.
+- **Pénélope link**: search for `cnrseditions.fr` (4 places: home and outreach, EN and FR) and
+  replace the homepage URL with the book page once it exists.
+- **CV PDFs**: overwrite `assets/CV.pdf` and `assets/CV-fr.pdf` (same names, links keep working).
+- **Teaching**: `cv.html` and `fr/cv.html` contain a comment marking where to add it
+  (copy the `tl-row` blocks used above it).
+- **Colors**: the palette is at the top of `assets/style.css` (`--cobalt` for links and buttons;
+  `--u` … `--y` are the six LSST passband colors used by the header strip and the home figure).
 
-## Personalize the content
+## Publish
 
-Bio, research, publications, CV, positions, profiles, and contact are all
-filled in with real content, including `assets/photo.jpg`, `assets/CV.pdf`,
-`assets/thesis-phd.pdf`, and `assets/thesis-msc.pdf`.
-
-Note: the Lattes link uses the stable `?id=` URL rather than the
-captcha-token URL Lattes shows after a search (that token is single-use and
-expires) — visitors may need to solve a captcha on Lattes' own site, which
-is normal behavior for that platform.
-
-## Why this helps you show up when people Google your name
-
-- The `<title>`, headings, and body text all repeat your full name
-  ("Eduardo José Barroso"), which is what search engines match against.
-- The embedded JSON-LD (`Person` schema) tells Google explicitly "this
-  page is about a person named X, affiliated with LAPP, and here are
-  their other profiles" via `sameAs`.
-- Once published, submit the URL in [Google Search
-  Console](https://search.google.com/search-console) and request
-  indexing — this is the single biggest lever for showing up quickly.
-- **Backlinks matter more than on-page tweaks.** Add this URL to your
-  INSPIRE-HEP profile, ORCID profile, Google Scholar profile, and your
-  LAPP staff page if one exists. A link from LAPP's institutional site in
-  particular carries a lot of weight with Google.
+GitHub → Settings → Pages → deploy from branch `main`, folder `/ (root)`.
+After pushing, submit `sitemap.xml` in Google Search Console; it lists both languages.
 
 ## Local preview
-
-No build tools needed — just open `index.html` in a browser, or run a
-tiny local server:
 
 ```
 python3 -m http.server 8000
 ```
 
-then visit `http://localhost:8000/`.
+then open `http://localhost:8000/`.

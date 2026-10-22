@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Recherche — Nathan Amouroux</title>
+<meta name="description" content="Recherche de Nathan Amouroux : étalonnage photométrique de l’observatoire Rubin avec le Collimated Beam Projector, masquage des étoiles brillantes et détection d’amas de galaxies pour la cosmologie avec LSST.">
+<meta name="author" content="Nathan Amouroux">
+<link rel="canonical" href="https://nathanamouroux.github.io/fr/recherche.html">
+<link rel="alternate" hreflang="en" href="https://nathanamouroux.github.io/research.html">
+<link rel="alternate" hreflang="fr" href="https://nathanamouroux.github.io/fr/recherche.html">
+<link rel="alternate" hreflang="x-default" href="https://nathanamouroux.github.io/research.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Nathan Amouroux">
+<meta property="og:title" content="Recherche — Nathan Amouroux">
+<meta property="og:description" content="Recherche de Nathan Amouroux : étalonnage photométrique de l’observatoire Rubin avec le Collimated Beam Projector, masquage des étoiles brillantes et détection d’amas de galaxies pour la cosmologie avec LSST.">
+<meta property="og:url" content="https://nathanamouroux.github.io/fr/recherche.html">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:image" content="https://nathanamouroux.github.io/assets/fig-cbp-filters.png">
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&amp;family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Aller au contenu</a>
+<div class="spectrum" aria-hidden="true"></div>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="index.html"><img src="../assets/favicon.svg" alt="" width="34" height="34">Nathan Amouroux</a>
+    <nav class="site-nav" aria-label="Principale">
+      <a href="a-propos.html">À propos</a><a href="recherche.html" aria-current="page">Recherche</a><a href="publications.html">Publications</a><a href="vulgarisation.html">Vulgarisation</a><a href="cv.html">CV</a><a href="contact.html">Contact</a>
+      <div class="lang" role="group" aria-label="Langue"><a href="../research.html" hreflang="en" lang="en">EN</a><span aria-current="true">FR</span></div>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<div class="wrap page-head"><h1>Recherche</h1><p class="page-lede">Instruments, traitement des données, et les systématiques qui les séparent de la cosmologie.</p></div>
+
+<div class="wrap prose">
+  <p>Ma recherche se situe à l’interface entre instrumentation astronomique, traitement des données et analyse scientifique. Des relevés comme LSST produisent d’énormes volumes de données, mais en tirer des résultats fiables demande de comprendre la réponse de l’instrument, les systématiques d’observation et les performances réelles des méthodes d’analyse. Je travaille sur toute cette chaîne, des données instrumentales aux logiciels de production et aux analyses scientifiques, avec des outils validés quantitativement sur des données réelles et simulées.</p>
+  <p>Ma thèse s’est déroulée au sein de l’équipe de calibration de l’observatoire Rubin et de la collaboration LSST Dark Energy Science Collaboration (DESC). Elle couvre trois thèmes.</p>
+
+  <h2 id="cbp">Étalonnage photométrique avec le Collimated Beam Projector</h2>
+  <p>Les supernovae de type Ia sont une sonde essentielle pour la cosmologie avec LSST, et les utiliser comme chandelles standard avec la précision requise impose d’étalonner très finement la réponse photométrique du télescope. Le Collimated Beam Projector (CBP) est un instrument installé dans le dôme, qui projette directement dans l’ouverture du télescope Simonyi des sources ponctuelles artificielles collimatées et monochromatiques, de flux et de longueur d’onde connus. Il s’affranchit ainsi des systématiques atmosphériques et de lumière parasite qui limitent les étalonnages par champ plat et par étoiles standard.</p>
+  <p>L’essentiel de ma thèse est consacré au CBP de l’observatoire Rubin, avec pour objectif de caractériser la réponse photométrique du plan focal de LSSTCam au niveau sub-pour-mille.</p>
+
+  <ul class="contrib">
+    <li><strong>Chaîne d’analyse complète</strong>Un pipeline complet de réduction des données du CBP, intégré au framework Data Management de Rubin : retrait de la signature instrumentale, détection des spots, soustraction du fond en deux dimensions et photométrie d’ouverture sur le plan focal de 189 CCD. Il préserve les variations de réponse d’un détecteur à l’autre, que les corrections de champ plat n’éliminent pas.</li>
+    <li><strong>Rendement quantique des détecteurs</strong>Rendement quantique relatif des détecteurs de LSSTCam entre 300 et 1100 nm, à partir de jeux de données pris à plusieurs positions du miroir, avec des écarts systématiques sub-pourcent par rapport aux courbes mesurées en laboratoire entre 400 et 860 nm.</li>
+    <li><strong>Transmission des filtres</strong>La première mesure in situ de cinq des six profils de transmission des filtres larges de LSST dans le télescope entièrement assemblé, et une première quantification du décalage des bords de bande avec l’angle d’incidence (effet de décalage vers le bleu), de plusieurs nanomètres.</li>
+    <li><strong>Répétabilité et systématiques</strong>Des mesures répétées dans des conditions identiques s’accordent à mieux que le pour-mille : la chaîne de suivi du CBP contribue donc de façon négligeable au budget d’incertitude de l’étalonnage. La comparaison de différentes configurations donne aussi une estimation directe des non-uniformités de transmission et des biais liés au fond.</li>
+  </ul>
+
+  <figure class="plate">
+    <img src="../assets/fig-cbp-filters.png" width="640" height="480" loading="lazy" alt="Réponse du télescope en fonction de la longueur d’onde pour les filtres g, r, i, z et y : chaque filtre a un plateau proche de 1 et des bords abrupts.">
+    <figcaption>Mesures des courbes de transmission des filtres LSST avec le CBP, pour un CCD et un pointé.</figcaption>
+  </figure>
+
+  <h2 id="masks">Systématiques de relevé et masquage des étoiles brillantes</h2>
+  <div class="split">
+    <div>
+      <p>Les étoiles brillantes au premier plan peuvent créer de fausses détections et biaiser la photométrie des galaxies, surtout dans l’environnement dense des amas. Pour y remédier, j’ai développé un logiciel qui génère automatiquement des masques autour des étoiles brillantes, pour les simulations LSST comme pour les données réelles, avec une méthode inspirée du relevé HSC-SSP.</p>
+      <p>La méthode a été validée dans le cadre de la validation de l’algorithme WaZP, et elle est utilisée dans Rubin DESC, y compris pour les premières analyses de la Data Preview 1 de LSST, comme l’étude en cours de l’amas de galaxies Abell 360.</p>
+    </div>
+    <figure class="plate">
+      <img src="../assets/fig-masks-a360.png" width="788" height="876" loading="lazy" alt="Carte du champ d’Abell 360 avec les masques d’objets brillants, les masques manuels, l’extinction et les bords d’exposition en différentes couleurs.">
+      <figcaption>Carte des masques générés pour le champ d’Abell 360 sur la Data Preview 1 de LSST.</figcaption>
+    </figure>
+  </div>
+
+  <h2 id="clusters">Amas de galaxies</h2>
+  <p>J’ai contribué à la validation et à l’optimisation de l’algorithme de détection d’amas AMICO sur les simulations LSST DC2. J’ai caractérisé sa complétude et sa pureté en fonction du décalage vers le rouge et de la masse des halos, et amorcé des études de prévisions de comptages d’amas à partir de l’estimation de la fonction de sélection. Ensemble, ces travaux rendent les catalogues d’amas plus robustes comme sondes cosmologiques de précision.</p>
+
+  <p class="topics">Mots-clés : observatoire Rubin et LSST, étalonnage photométrique, Collimated Beam Projector, systématiques de relevé, masquage des étoiles brillantes, amas de galaxies, LSST DESC, chaînes de traitement de données. Articles et présentations sont sur les pages <a href="publications.html">publications</a> et <a href="cv.html">CV</a>.</p>
+</div>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>&copy; <span class="year">2026</span> Nathan Amouroux</p>
+    <p>Laboratoire d’Annecy de Physique des Particules (LAPP), Annecy, France</p>
+  </div>
+</footer>
+<script>
+  document.querySelectorAll('.year').forEach(function (el) { el.textContent = new Date().getFullYear(); });
+</script>
+</body>
+</html>

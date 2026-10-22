@@ -1,10 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://nathanamouroux.github.io/</loc></url>
-  <url><loc>https://nathanamouroux.github.io/about.html</loc></url>
-  <url><loc>https://nathanamouroux.github.io/research.html</loc></url>
-  <url><loc>https://nathanamouroux.github.io/publications.html</loc></url>
-  <url><loc>https://nathanamouroux.github.io/cv.html</loc></url>
-  <url><loc>https://nathanamouroux.github.io/profiles.html</loc></url>
-  <url><loc>https://nathanamouroux.github.io/contact.html</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://nathanamouroux.github.io/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nathanamouroux.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nathanamouroux.github.io/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nathanamouroux.github.io/"/>
+  </url>
+  <url>
+    <loc>https://nathanamouroux.github.io/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nathanamouroux.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nathanamouroux.github.io/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nathanamouroux.github.io/"/>
+  </url>
+  <url>
+    <loc>https://nathanamouroux.github.io/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nathanamouroux.github.io/about.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nathanamouroux.github.io/fr/a-propos.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nathanamouroux.github.io/about.html"/>
+  </url>
+  <url>
+    <loc>https://nathanamouroux.github.io/fr/a-propos.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nathanamouroux.github.io/about.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nathanamouroux.github.io/fr/a-propos.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nathanamouroux.github.io/about.html"/>
+  </url>
+  <url>
+    <loc>https://nathanamouroux.github.io/research.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nathanamouroux.github.io/research.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nathanamouroux.github.io/fr/recherche.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nathanamouroux.github.io/research.html"/>
+  </url>
+  <url>
+    <loc>https://nathanamouroux.github.io/fr/recherche.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nathanamouroux.github.io/research.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nathanamouroux.github.io/fr/recherche.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nathanamouroux.github.io/research.html"/>
+  </url>
+  <url>
+    <loc>https://nathanamouroux.github.io/publications.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nathanamouroux.github.io/publications.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nathanamouroux.github.io/fr/publications.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nathanamouroux.github.io/publications.html"/>
+  </url>
+  <url>
+    <loc>https://nathanamouroux.github.io/fr/publications.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nathanamouroux.github.io/publications.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nathanamouroux.github.io/fr/publications.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nathanamouroux.github.io/publications.html"/>
+  </url>
+  <url>
+    <loc>https://nathanamouroux.github.io/outreach.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nathanamouroux.github.io/outreach.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nathanamouroux.github.io/fr/vulgarisation.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nathanamouroux.github.io/outreach.html"/>
+  </url>
+  <url>
+    <loc>https://nathanamouroux.github.io/fr/vulgarisation.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nathanamouroux.github.io/outreach.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nathanamouroux.github.io/fr/vulgarisation.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nathanamouroux.github.io/outreach.html"/>
+  </url>
+  <url>
+    <loc>https://nathanamouroux.github.io/cv.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nathanamouroux.github.io/cv.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nathanamouroux.github.io/fr/cv.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nathanamouroux.github.io/cv.html"/>
+  </url>
+  <url>
+    <loc>https://nathanamouroux.github.io/fr/cv.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nathanamouroux.github.io/cv.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nathanamouroux.github.io/fr/cv.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nathanamouroux.github.io/cv.html"/>
+  </url>
+  <url>
+    <loc>https://nathanamouroux.github.io/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nathanamouroux.github.io/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nathanamouroux.github.io/fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nathanamouroux.github.io/contact.html"/>
+  </url>
+  <url>
+    <loc>https://nathanamouroux.github.io/fr/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nathanamouroux.github.io/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nathanamouroux.github.io/fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nathanamouroux.github.io/contact.html"/>
+  </url>
 </urlset>
