@@ -95,9 +95,7 @@ h1, h2, h3 {
    ============================================================ */
 .spectrum {
   height: 4px;
-  background: linear-gradient(90deg,
-    var(--u) 0 16.667%, var(--g) 16.667% 33.333%, var(--r) 33.333% 50%,
-    var(--i) 50% 66.667%, var(--z) 66.667% 83.333%, var(--y) 83.333% 100%);
+  background: var(--cobalt);
 }
 
 .site-header {
