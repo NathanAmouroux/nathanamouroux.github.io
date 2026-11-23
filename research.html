@@ -43,12 +43,12 @@
   <p>My Ph.D. was carried out within the Rubin Observatory calibration team and the LSST Dark Energy Science Collaboration (DESC). It covers three topics.</p>
 
   <h2 id="cbp">Photometric calibration with the Collimated Beam Projector</h2>
-  <p>Type Ia supernovae are a key probe for LSST cosmology, and using them as standard candles at the required precision means calibrating the telescope’s photometric response very accurately. The Collimated Beam Projector (CBP) is an in-dome instrument that projects collimated, monochromatic artificial point sources of known flux and wavelength directly into the aperture of the Simonyi Telescope. This bypasses the atmospheric and stray-light systematics that limit flat-field and standard-star calibration.</p>
-  <p>Most of my thesis is devoted to the CBP at the Rubin Observatory, with the goal of characterizing the photometric response of the LSSTCam focal plane at the sub-permil level.</p>
+  <p>Type Ia supernovae are a key probe for LSST cosmology, and using them as standard candles at the required precision means calibrating the telescope’s photometric response very accurately. The Collimated Beam Projector (CBP) is an in-dome instrument that projects collimated, monochromatic artificial point sources of monitored flux and wavelength directly into the aperture of the Simonyi Telescope. This bypasses the atmospheric and and mitigate stray-light systematics that limit flat-field and standard-star calibration.</p>
+  <p>Part of my thesis is devoted to the CBP at the Rubin Observatory, with the goal of characterizing the photometric response of the Rubin Telescope at the sub-permil level.</p>
 
   <ul class="contrib">
-    <li><strong>End-to-end analysis pipeline</strong>A complete CBP data-reduction pipeline integrated in the Rubin Data Management framework: instrument signature removal, spot detection, two-dimensional background subtraction and aperture photometry on the 189-CCD focal plane. It preserves the detector-to-detector response variations that flat-field corrections do not remove.</li>
-    <li><strong>Detector quantum efficiency</strong>Relative quantum efficiency of individual LSSTCam detectors between 300 and 1100 nm, from datasets taken at several mirror positions, with sub-percent systematic differences from laboratory curves between 400 and 860 nm.</li>
+    <li><strong>End-to-end analysis pipeline</strong>A complete CBP data-reduction pipeline integrated in the Rubin Data Management framework: instrument signature removal, spot detection, two-dimensional background subtraction and aperture photometry on the 189-CCD focal plane.</li>
+    <li><strong>Detector quantum efficiency</strong>Relative telescope response of individual LSSTCam detectors between 300 and 1100 nm, from datasets taken at several mirror positions, with sub-percent systematic differences from laboratory curves between 400 and 860 nm.</li>
     <li><strong>Filter throughput</strong>The first in-situ measurement of five of the six LSST broadband filter transmission profiles in the fully assembled telescope, and a first quantification of how the band edges shift with the angle of incidence (the blue-shift effect), by several nanometers.</li>
     <li><strong>Repeatability and systematics</strong>Repeated measurements under identical conditions agree below the per-mil level, so the CBP monitoring chain contributes negligibly to the calibration uncertainty budget. Comparing different setups also gives a direct estimate of throughput non-uniformities and background-related biases.</li>
   </ul>
@@ -62,11 +62,11 @@
   <div class="split">
     <div>
       <p>Bright foreground stars can create spurious detections and bias galaxy photometry, particularly in the dense environment of galaxy clusters. To address this, I developed automated software that generates masks around bright stars, for both LSST simulations and real data, with a method inspired by the HSC-SSP survey.</p>
-      <p>The method was validated within the WaZP cluster-finder validation, and it is used in Rubin DESC, including for early analyses of LSST Data Preview 1 such as the ongoing study of the Abell 360 galaxy cluster.</p>
+      <p>The method was validated within the WaZP cluster-finder validation, and it is used in Rubin DESC, including for early analyses of LSST Data Preview 1 such as the ongoing study of the Abell 360 galaxy cluster (paper in review).</p>
     </div>
     <figure class="plate">
       <img src="assets/fig-masks-a360.png" width="788" height="876" loading="lazy" alt="Sky map of the Abell 360 field with masks for bright objects, hand masks, extinction and exposure edges drawn in different colors.">
-      <figcaption>Map of the masks generated for the Abell 360 field on LSST Data Preview 1.</figcaption>
+      <figcaption>Image of the Abell 360 galaxy cluster from the LSST Data Preview 1, showing the different mask layers, notably the yellow mask generated around bright objects.</figcaption>
     </figure>
   </div>
 
